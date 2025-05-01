@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для самой лучшей ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d23669;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+        .tab-btn {
+            background: #ffccd5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: all 0.3s;
+        }
+        .tab-btn:hover {
+            background: #ff9a9e;
+            color: white;
+        }
+        .tab-btn.active {
+            background: #d23669;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            text-align: left;
+            padding: 15px;
+            border-radius: 10px;
+            background: white;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .heart {
+            color: #d23669;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .reason, .compliment {
+            padding: 10px;
+            margin: 5px 0;
+            border-left: 3px solid #ff9a9e;
+            background: #fff9fa;
+        }
+        .compliment {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        @media (min-width: 600px) {
+            .compliment {
+                width: calc(50% - 10px);
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Я тебя люблю <span class="heart">❤️</span></h1>
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('tab1')">Почему я тебя люблю</button>
+            <button class="tab-btn" onclick="openTab('tab2')">Ты самая...</button>
+        </div>
+        
+        <div id="tab1" class="tab-content active">
+            <div class="reason">1. Ты делаешь мой мир ярче.</div>
+            <div class="reason">2. Твоя улыбка согревает мое сердце.</div>
+            <div class="reason">3. Ты умеешь слушать, даже когда мне сложно говорить.</div>
+            <div class="reason">4. Ты поддерживаешь меня в любых начинаниях.</div>
+            <div class="reason">5. Ты красива всегда.</div>
+            <div class="reason">6. Твой смех — мой любимый звук.</div>
+            <div class="reason">7. С тобой даже обычный вечер становится праздником.</div>
+            <div class="reason">8. Ты прощаешь мои ошибки и не держишь зла.</div>
+            <div class="reason">9. Ты умеешь поднять мне настроение.</div>
+            <div class="reason">10. Ты заботишься обо мне по-своему, трогательно.</div>
+            <div class="reason">11. Ты веришь в меня, даже когда я сомневаюсь.</div>
+            <div class="reason">12. Ты терпишь мои странности и какую-то фигню.</div>
+            <div class="reason">13. С тобой любой момент становится веселее.</div>
+            <div class="reason">14. Ты моя самая большая поддержка.</div>
+            <div class="reason">15. Ты находишь нужные слова в трудную минуту.</div>
+            <div class="reason">16. Ты — не просто любимая, но и лучший друг.</div>
+            <div class="reason">17. Ты умеешь удивлять меня мелочами.</div>
+            <div class="reason">18. Ты честна со мной.</div>
+            <div class="reason">19. Ты делаешь мои дни теплее.</div>
+            <div class="reason">20. Ты всегда стараешься понять меня.</div>
+            <div class="reason">21. Твои глаза — как бездонные океаны, в которых я тону.</div>
+            <div class="reason">22. Ты умеешь быть нежной, когда мне это нужно.</div>
+            <div class="reason">23. Ты ценишь то, что я делаю для тебя.</div>
+            <div class="reason">24. Ты умеешь прощать.</div>
+            <div class="reason">25. Ты даришь мне ощущение дома.</div>
+            <div class="reason">26. Ты всегда находишь повод для радости.</div>
+            <div class="reason">27. Ты умеешь любить так, как никто другой.</div>
+            <div class="reason">28. Ты веришь в наше будущее.</div>
+            <div class="reason">29. Ты умеешь смеяться над моими шутками, даже если они плохие.</div>
+            <div class="reason">30. Ты даешь мне силы, когда я устаю.</div>
+            <div class="reason">31. Ты помнишь даже маленькие детали о нас и обо мне.</div>
+            <div class="reason">32. Ты умеешь создавать уют там, где ты есть.</div>
+            <div class="reason">33. Ты не боишься моих недостатков.</div>
+            <div class="reason">34. Ты не идеальна, но ты идеальна для меня.</div>
+            <div class="reason">35. Ты умеешь прощать мою забывчивость.</div>
+            <div class="reason">36. Ты всегда находишь время для меня.</div>
+            <div class="reason">37. Ты не сдаешься, даже когда трудно.</div>
+            <div class="reason">38. Ты умеешь слушать моё молчание.</div>
+            <div class="reason">39. Ты не боишься мечтать вместе со мной.</div>
+            <div class="reason">40. Ты умеешь ждать, когда это нужно.</div>
+            <div class="reason">41. Ты умеешь любить не только в радости, но и в трудностях.</div>
+            <div class="reason">42. Ты умеешь быть моим вдохновением.</div>
+            <div class="reason">43. Ты умеешь любить так, что мне хочется стать лучше.</div>
+            <div class="reason">44. Ты умеешь любить не только словами, но и делами.</div>
+            <div class="reason">45. Ты не перестаешь удивлять меня.</div>
+            <div class="reason">46. Ты постоянно все больше открываешься мне.</div>
+            <div class="reason">47. Ты умеешь любить даже мои недостатки.</div>
+            <div class="reason">48. Ты не уходишь, когда становится сложно.</div>
+            <div class="reason">49. Ты умеешь любить так, что мне не нужны другие.</div>
+            <div class="reason">50. Ты умеешь видеть во мне то, чего не видят другие.</div>
+            <div class="reason">51. Ты умеешь быть моим самым верным другом.</div>
+            <div class="reason">52. Ты умеешь быть моим самым большим счастьем.</div>
+            <div class="reason">53. Ты не устаешь повторять, что любишь меня.</div>
+            <div class="reason">54. Ты умеешь быть моей самой большой гордостью.</div>
+            <div class="reason">55. Ты не перестаешь заботиться.</div>
+            <div class="reason">56. Ты умеешь быть моим самым дорогим человеком.</div>
+            <div class="reason">57. Ты не забываешь, как важно говорить «спасибо».</div>
+            <div class="reason">58. Ты умеешь быть моей самой большой удачей.</div>
+            <div class="reason">59. Ты остаешься рядом даже в серьезные ссоры.</div>
+            <div class="reason">60. Ты не перестаешь верить в нас.</div>
+            <div class="reason">61. Ты не боишься быть рядом в самые трудные моменты.</div>
+            <div class="reason">62. Ты умеешь быть моим самым большим вдохновением.</div>
+            <div class="reason">63. Ты не просто любишь меня — ты делаешь меня лучше.</div>
+            <div class="reason">64. Потому что ты — ты, и другой такой нет.</div>
+            <div class="reason">65. Ты всегда находишь повод сказать мне что-то доброе.</div>
+            <div class="reason">66. Ты замечаешь, когда мне грустно, даже если я молчу.</div>
+            <div class="reason">67. Ты со мной даже когда я в плохом настроении.</div>
+            <div class="reason">68. Ты говоришь про меня хорошее, даже когда я сам про себя так не думаю.</div>
+            <div class="reason">69. Ты показала мне что на самом деле является любовью.</div>
+            <div class="reason">70. Мне с тобой хорошо.</div>
+            <div class="reason">71. На самом деле не то чтобы именно из-за каких-то причин, а я тебя люблю просто так.</div>
+        </div>
+        
+        <div id="tab2" class="tab-content">
+            <div class="compliment">1. добрая</div>
+            <div class="compliment">2. нежная</div>
+            <div class="compliment">3. искренняя</div>
+            <div class="compliment">4. красивая</div>
+            <div class="compliment">5. милая</div>
+            <div class="compliment">6. заботливая</div>
+            <div class="compliment">7. понимающая</div>
+            <div class="compliment">8. терпеливая</div>
+            <div class="compliment">9. чуткая</div>
+            <div class="compliment">10. мудрая</div>
+            <div class="compliment">11. ласковая</div>
+            <div class="compliment">12. стильная</div>
+            <div class="compliment">13. обаятельная</div>
+            <div class="compliment">14. притягательная</div>
+            <div class="compliment">15. неотразимая</div>
+            <div class="compliment">16. очаровательная</div>
+            <div class="compliment">17. романтичная</div>
+            <div class="compliment">18. мечтательная</div>
+            <div class="compliment">19. вдохновляющая</div>
+            <div class="compliment">20. надёжная</div>
+            <div class="compliment">21. верная</div>
+            <div class="compliment">22. преданная</div>
+            <div class="compliment">23. честная</div>
+            <div class="compliment">24. справедливая</div>
+            <div class="compliment">25. сильная</div>
+            <div class="compliment">26. целеустремлённая</div>
+            <div class="compliment">27. трудолюбивая</div>
+            <div class="compliment">28. талантливая (ну золотые руки, епта)</div>
+            <div class="compliment">29. творческая</div>
+            <div class="compliment">30. музыкальная</div>
+            <div class="compliment">31. улыбчивая</div>
+            <div class="compliment">32. весёлая</div>
+            <div class="compliment">33. интересная</div>
+            <div class="compliment">34. разносторонняя</div>
+            <div class="compliment">35. умная</div>
+            <div class="compliment">36. внимательная</div>
+            <div class="compliment">37. отзывчивая</div>
+            <div class="compliment">38. необыкновенная</div>
+            <div class="compliment">39. особенная</div>
+            <div class="compliment">40. единственная</div>
+            <div class="compliment">41. неповторимая</div>
+            <div class="compliment">42. драгоценная</div>
+            <div class="compliment">43. любимая</div>
+            <div class="compliment">44. желанная</div>
+            <div class="compliment">45. важная</div>
+            <div class="compliment">46. ценная</div>
+            <div class="compliment">47. прекрасная</div>
+            <div class="compliment">48. обворожительная</div>
+            <div class="compliment">49. энергичная</div>
+            <div class="compliment">50. жизнерадостная</div>
+            <div class="compliment">51. позитивная</div>
+            <div class="compliment">52. добрая</div>
+            <div class="compliment">53. щедрая</div>
+            <div class="compliment">54. бескорыстная</div>
+            <div class="compliment">55. великодушная</div>
+            <div class="compliment">56. благородная</div>
+            <div class="compliment">57. удивительная</div>
+            <div class="compliment">58. замечательная</div>
+            <div class="compliment">59. вайбовая</div>
+            <div class="compliment">60. хайповая</div>
+            <div class="compliment">61. грациозная</div>
+            <div class="compliment">62. элегантная</div>
+            <div class="compliment">63. женственная</div>
+            <div class="compliment">64. лучистая</div>
+            <div class="compliment">65. тёплая</div>
+            <div class="compliment">66. уютная</div>
+            <div class="compliment">67. гармоничная</div>
+            <div class="compliment">68. лёгкая</div>
+            <div class="compliment">69. воздушная</div>
+            <div class="compliment">70. загадочная</div>
+            <div class="compliment">71. волшебная</div>
+            <div class="compliment">72. сказочная</div>
+            <div class="compliment">73. редкая</div>
+            <div class="compliment">74. афигенная</div>
+            <div class="compliment">75. вау</div>
+            <div class="compliment">76. лучшая</div>
+            <div class="compliment">77. прикольная</div>
+            <div class="compliment">78. хорошая</div>
+            <div class="compliment">79. близкая</div>
+            <div class="compliment">80. смешношутливая</div>
+            <div class="compliment">81. ахуеная</div>
+            <div class="compliment">82. эщкерная</div>
+            <div class="compliment">83. внимательная</div>
+            <div class="compliment">84. решительная</div>
+            <div class="compliment">85. фактящая</div>
+            <div class="compliment">86. уверенная</div>
+            <div class="compliment">87. смешная</div>
+            <div class="compliment">88. остроумная</div>
+            <div class="compliment">89. находчивая</div>
+            <div class="compliment">90. артистичная</div>
+            <div class="compliment">91. поэтичная</div>
+            <div class="compliment">92. сердце растапляющая</div>
+            <div class="compliment">93. наипрекраснейшая</div>
+            <div class="compliment">94. мемная</div>
+            <div class="compliment">95. чувственная</div>
+            <div class="compliment">96. страстная</div>
+            <div class="compliment">97. пленительная</div>
+            <div class="compliment">98. манящая</div>
+            <div class="compliment">99. неповторимая</div>
+            <div class="compliment">100. голову сносящая</div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
